@@ -33,9 +33,11 @@ namespace RedOverUI.Test
                 }
                 var pixels = bmpScreenCapture.BitmapToByteRgbQ();
 
-                for (var x = 0; x < bmpScreenCapture.Width; x++)
+                var width = bmpScreenCapture.Width;
+                var height = bmpScreenCapture.Height;
+                for (var x = 0; x < width; x++)
                 {
-                    for (var y = 0; y < bmpScreenCapture.Height; y++)
+                    for (var y = 0; y < height; y++)
                     {
                         var color = pixels.GetColor(x, y);
                         Assert.IsTrue(color.R == Color.Red.R);
