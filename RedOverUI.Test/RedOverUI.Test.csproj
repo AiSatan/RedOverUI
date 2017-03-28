@@ -36,6 +36,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -44,8 +45,8 @@
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\RedOverUI\packages\MSTest.TestFramework.1.1.13\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Red.BitmapHelpers">
-      <HintPath>..\RedBitmapHelpers\RedBitmapHelpers\bin\Release\Red.BitmapHelpers.dll</HintPath>
+    <Reference Include="Red.BitmapHelpers, Version=1.0.6297.2231, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Red.BitmapHelper.1.0.0\lib\net40\Red.BitmapHelpers.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
