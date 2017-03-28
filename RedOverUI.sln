@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedOverUI", "RedOverUI.csproj", "{F8173EBD-1853-4EB7-8637-C8B5A86C6C76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedOverUI", "RedOverUI\RedOverUI.csproj", "{F8173EBD-1853-4EB7-8637-C8B5A86C6C76}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DBE58E2D-82D2-4762-A399-2329C50F7E24}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{69E3DA1D-0E71-45F6-A91D-4F87829787AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedOverUI.Test", "..\RedOverUI.Test\RedOverUI.Test.csproj", "{50F3AC3C-C8C3-4A5F-AC43-0BE350BE4881}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedOverUI.Test", "RedOverUI.Test\RedOverUI.Test.csproj", "{50F3AC3C-C8C3-4A5F-AC43-0BE350BE4881}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +28,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{50F3AC3C-C8C3-4A5F-AC43-0BE350BE4881} = {DBE58E2D-82D2-4762-A399-2329C50F7E24}
+		{50F3AC3C-C8C3-4A5F-AC43-0BE350BE4881} = {69E3DA1D-0E71-45F6-A91D-4F87829787AB}
 	EndGlobalSection
 EndGlobal
