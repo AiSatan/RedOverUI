@@ -44,6 +44,7 @@ namespace RedOverUI.Test
                     }
                 }
             }
+            RedOverlay.Shutdown();
         }
     }
 }

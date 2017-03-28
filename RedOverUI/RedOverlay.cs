@@ -38,6 +38,11 @@ namespace RedOverUI
             }
         }
 
+        public static void Shutdown()
+        {
+            FormThread.Abort();
+        }
+
         #region Called from Form
 
         internal static void Update(Graphics g)
