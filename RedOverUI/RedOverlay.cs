@@ -31,16 +31,19 @@ namespace RedOverUI
             if (_overlayForm.InvokeRequired)
             {
                 _overlayForm?.Invoke(new Action(Refresh));
+                return;
             }
-            else
-            {
-                _overlayForm?.Refresh();
-            }
+            _overlayForm?.Refresh();
         }
 
         public static void Shutdown()
         {
-            FormThread.Abort();
+            if (_overlayForm.InvokeRequired)
+            {
+                _overlayForm?.Invoke(new Action(Shutdown));
+                return;
+            }
+            _overlayForm?.Close();
         }
 
         #region Called from Form
