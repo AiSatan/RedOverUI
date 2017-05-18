@@ -22,6 +22,11 @@ You can look "test project" to see how work with the library
               Thread.Sleep(100);
             }
             
+            //or you can use this
+            var timer = new Timer(500);
+            timer.Elapsed += (sender, e) => RedOverlay.Refresh();
+            
+            
             //then if you done use this method
             RedOverlay.Shutdown();
 ```
