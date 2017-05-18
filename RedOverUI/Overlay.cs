@@ -36,10 +36,17 @@ namespace RedOverUI
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            //refresh
-            e.Graphics.Clear(Color.Black);
-            //call event
-            RedOverlay.Update(e.Graphics);
+            try
+            {
+                //refresh
+                e.Graphics.Clear(Color.Black);
+                //call event
+                RedOverlay.Update(e.Graphics);
+            }
+            catch
+            {
+                // ignored
+            }
         }
 
         #endregion
