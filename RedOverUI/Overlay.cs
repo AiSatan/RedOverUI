@@ -38,9 +38,11 @@ namespace RedOverUI
         {
             try
             {
-                //refresh
+                // set on top - always
+                Win32Delegates.SetWindowPos(this.Handle, Win32Delegates.HWND_TOPMOST, 0, 0, 0, 0, Win32Delegates.TOPMOST_FLAGS);
+                // refresh
                 e.Graphics.Clear(Color.Black);
-                //call event
+                // call event
                 RedOverlay.Update(e.Graphics);
             }
             catch
