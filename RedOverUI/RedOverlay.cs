@@ -46,6 +46,16 @@ namespace RedOverUI
             _overlayForm?.Close();
         }
 
+        public static void SetOpacity(int alpha)
+        {
+            if (_overlayForm.InvokeRequired)
+            {
+                _overlayForm?.Invoke(new Action<int>(SetOpacity), alpha);
+                return;
+            }
+            _overlayForm?.SetOpacity(alpha / 255.0d);
+        }
+
         #region Called from Form
 
         internal static void Update(Graphics g)

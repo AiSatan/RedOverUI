@@ -34,16 +34,24 @@ namespace RedOverUI
             RedOverlay.FormShown();
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        public void SetOpacity(double opacity)
+        {
+            Opacity = opacity;
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
         {
             try
             {
+                base.OnPaint(e);
+
                 // set on top - always
                 Win32Delegates.SetWindowPos(this.Handle, Win32Delegates.HWND_TOPMOST, 0, 0, 0, 0, Win32Delegates.TOPMOST_FLAGS);
                 // refresh
                 e.Graphics.Clear(Color.Black);
                 // call event
                 RedOverlay.Update(e.Graphics);
+
             }
             catch
             {
